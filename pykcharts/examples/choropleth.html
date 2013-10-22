@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <title>PykCharts</title>
-      <link rel="shortcut icon" href="/pykcharts/images/favicon.ico" type="image/ico">
+      <link rel="shortcut icon" href="../images/favicon.ico" type="image/ico">
       <script src="../res/lib/d3.js" type="text/javascript"></script>
       <script src="../res/lib/topojson.js" type="text/javascript"></script>
       <script src="../res/lib/jquery.js" type="text/javascript"></script>
@@ -21,7 +21,7 @@
                   <h1><a href="/PykCharts">PykCharts</a></h1>
                </div>
                <div class="col-sm-1" style="padding-top: 25px; margin-bottom: 60px;">
-                  <a href="http://www.pykih.com" target="_blank"><img src="/pykcharts/images/pykih_25.png" class="img-responsive"></a>
+                  <a href="http://www.pykih.com" target="_blank"><img src="../images/pykih_25.png" class="img-responsive"></a>
                </div>
             </div>
             <div class="col-sm-12">
@@ -53,9 +53,9 @@
          $(document).ready(function(){
          k = new PykCharts.Choropleth({
          selection: "#choropleth-container",
-         topojson: "/pykcharts/data/us.json",
-         county_data: "/pykcharts/data/counties_data.json",
-         state_data: "/pykcharts/data/states_data.json",
+         topojson: "/PykCharts/pykcharts/data/us.json",
+         county_data: "/PykCharts/pykcharts/data/counties_data.json",
+         state_data: "/PykCharts/pykcharts/data/states_data.json",
          });
          k.init();
          });
