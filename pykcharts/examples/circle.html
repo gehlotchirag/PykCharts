@@ -3,14 +3,33 @@
    <head>
       <meta charset="utf-8">
       <title>PykCharts</title>
-      <link rel="shortcut icon" href="/images/favicon.ico" type="image/ico">
+      <link rel="shortcut icon" href="/pykcharts/images/favicon.ico" type="image/ico">
       <script src="../res/lib/d3.js" type="text/javascript"></script>
       <script src="../res/lib/jquery.js" type="text/javascript"></script>
       <script src="../res/lib/bootstrap.js" type="text/javascript"></script>
       <link href="../res/lib/bootstrap.css" rel="stylesheet" type="text/css">
-      <link href="../res/css/ultimate.css" rel="stylesheet" type="text/css">
       <script src="../res/js/pykcharts.js" type="text/javascript" charset="utf-8"></script>
-      <script src="../res/js/ultimate.js" type="text/javascript" charset="utf-8"></script>
+	  			<script src="../res/js/pykcharts.js" charset="utf-8"></script>
+
+		<script src="../res/js/compare_with_circles.js" charset="utf-8"></script>
+
+
+<style type="text/css">
+
+svg.pyk-compare_with_circles{font-family: Arial, sans-serif;font-size:10px;}
+svg.pyk-compare_with_circles g.axis path,svg.pyk-compare_with_circles g.axis line {fill: none;stroke:#b6b6b6;shape-rendering: crispEdges;}
+/*.tick line{fill:none;stroke:none;}*/
+svg.pyk-compare_with_circles g.tick text{fill:#999;}
+svg.pyk-compare_with_circles text.label{font-size:12px;font-weight:bold;cursor:pointer;}
+svg.pyk-compare_with_circles text.value{font-size:12px;font-weight:bold;}
+svg.pyk-compare_with_circles g.axis text {
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+
+</style>
+
    </head>
    <body>
       <div class="container">
@@ -20,7 +39,7 @@
                   <h1><a href="/index.html">PykCharts</a></h1>
                </div>
                <div class="col-sm-1" style="padding-top: 25px; margin-bottom: 60px;">
-                  <a href="http://www.pykih.com" target="_blank"><img src="../images/pykih_25.png" class="img-responsive"></a>
+                  <a href="http://www.pykih.com" target="_blank"><img src="/pykcharts/images/pykih_25.png" class="img-responsive"></a>
                </div>
             </div>
             <div class="col-sm-12">
@@ -29,15 +48,15 @@
                      <li><a href="/pykcharts/examples/river.html">River</a></li>
                      <li><a href="/pykcharts/examples/choropleth.html">Zoomable Choropleth</a></li>
                      <li><a href="/pykcharts/examples/googlemap.html">Two layer Heat Maps</a></li>
-                     <li class="active"><a href="/pykcharts/examples/ultimate.html">Ultimate Column</a></li>
+                     <li><a href="/pykcharts/examples/ultimate.html">Ultimate Column</a></li>
                      <li><a href="/pykcharts/examples/chord.html">Rotating Chord</a></li>
- 					 <li><a href="/pykcharts/examples/circle.html">Compare with circle</a></li>
+					 <li class="active><a href="/pykcharts/examples/circle.html">Compare with circle</a></li>
 
                   </ul>
                   <br/>
                </div>
                <div class="col-sm-9">
-                  <div id="ultimate-container"></div>
+					<div id="circle-container"></div>
                </div>
             </div>
          </div>
@@ -50,15 +69,26 @@
          </div>
 		</div>
       </div>
-      <script>
-         $(document).ready(function(e){
-         var k = new PykCharts.Ultimate({
-         data: "/pykcharts/data/ultimate-data.json",
-         selection: "#ultimate-container",
-	 width: 850,
+
+	  <script>
+  	
+   $(document).ready(function(e){
+   
+ var circle = new PykCharts.compare_with_circles({
+ 		data:"../data/compare_with_circles.json",
+        width : 600,
+        height : 600,
+         selection: "#circle-container"
+
          });
-         k.init();
-         });
-      </script>
+		 
+		 
+     
+         circle.init();     
+
+		 });
+  
+		</script>
+		
    </body>
 </html>
