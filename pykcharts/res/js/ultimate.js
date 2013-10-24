@@ -65,6 +65,19 @@ PykCharts.Ultimate = function(options){
 
     }
 
+    this.onlyFilter = function(f){
+	var index = this.options.filterList.indexOf(f)
+	if(this.options.filterList.length === 1 && index != -1){
+	    // if its the only item on the list, get rid of it
+	    this.options.filterList = [];
+	}else{
+	    // otherwise empty the list and add this one to it
+	    this.options.filterList = [];
+	    this.options.filterList.push(f);
+	}
+	this.draw();
+    }
+
     this.toggleFilter = function(f){
 	var index = this.options.filterList.indexOf(f)
 	if(index === -1){
@@ -218,18 +231,20 @@ PykCharts.Ultimate = function(options){
 	    group_label_data.push({x: x, name: i});
 	}
 
-	this.svg.selectAll("text.group_label").data(group_label_data).enter()
-	    .append("text").attr("class", "group_label")
-	    .attr("x", function(d){
-		return d.x + that.options.margins.left;
-	    })
-	    .attr("y", function(d){
-		return parseInt(h) + 24;
-	    })
-	    .attr("text-anchor", "middle")
-	    .text(function(d){
-		return d.name;
-	    });
+	if(group_label_data.length > 1){
+	    this.svg.selectAll("text.group_label").data(group_label_data).enter()
+		.append("text").attr("class", "group_label")
+		.attr("x", function(d){
+		    return d.x + that.options.margins.left;
+		})
+		.attr("y", function(d){
+		    return parseInt(h) + 24;
+		})
+		.attr("text-anchor", "middle")
+		.text(function(d){
+		    return d.name;
+		});
+	}
 
 	var bars = this.chart_group.selectAll("g.bars").data(layers)
 
@@ -258,6 +273,9 @@ PykCharts.Ultimate = function(options){
 	    })
 	    .on("mouseout", function(){
 		that.tooltip.style("visibility", "hidden");
+	    })
+	    .on("click", function(d){
+		that.onlyFilter(d.name);
 	    });
 
 
@@ -375,7 +393,8 @@ PykCharts.Ultimate = function(options){
 			"x": id,
 			"y": icing.val,
 			"color": icing.color,
-			"tooltip": icing.tooltip
+			"tooltip": icing.tooltip,
+			"name": icing.name
 		    })
 		}
 	    }
