@@ -1,0 +1,257 @@
+{
+    "name": "Continent",
+    "children": [
+        {
+            "name": "Contries",
+            "children": [
+                {
+                    "name": "Australia ",
+                    "children": [
+                        {
+                            "name": "Micronesia",
+                            "ttip": "ttipvaalue",
+                            "colors": "#3182ba",
+                            "size": 3938
+                        },
+                        {
+                            "name": "NewZealand",
+                            "ttip": "newttip",
+                            "colors": "#3182bb",
+                            "size": 4812
+                        },
+                        {
+                            "name": "Australia",
+                            "ttip": "ttipvaalue",
+                            "colors": "#3182bb",
+                            "size": 6714
+                        },
+                        {
+                            "name": "Fiji",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 743
+                        }
+                    ]
+                },
+                {
+                    "name": "Europe",
+                    "children": [
+                        {
+                            "name": "France",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 3534
+                        },
+                        {
+                            "name": "Spain",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 5731
+                        },
+                        {
+                            "name": "Sweden",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 7840
+                        },
+                        {
+                            "name": "Norway",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 5914
+                        },
+                        {
+                            "name": "Germany",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 3416
+                        },
+                        {
+                            "name": "Sweden",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 7840
+                        },
+                        {
+                            "name": "Norway",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 5914
+                        },
+                        {
+                            "name": "finland",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 3840
+                        },
+                        {
+                            "name": "poland",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 2914
+                        }
+                    ]
+                },
+                {
+                    "name": "Southamerica",
+                    "children": [
+                        {
+                            "name": "Chile",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 4074
+                        },
+                        {
+                            "name": "Peru",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 5074
+                        },
+                        {
+                            "name": "Columbia",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 3074
+                        },
+                        {
+                            "name": "brazil",
+                            "ttip": "oktip",
+                            "colors": "#3182bb",
+                            "size": 6074
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "North America",
+            "children": [
+                {
+                    "name": "WashingtonDc",
+                    "ttip": "oktip",
+                    "colors": "#3182bb",
+                    "size": 17010
+                },
+                {
+                    "name": "NeWYork",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bb",
+                    "size": 5842
+                },
+                {
+                    "name": "California",
+                    "children": [
+                        {
+                            "name": "Atlanta",
+                            "ttip": "ttipvaalue",
+                            "colors": "#3182bb",
+                            "size": 1983
+                        },
+                        {
+                            "name": "NewJerysey",
+                            "ttip": "ttipvaalue",
+                            "colors": "#3182bb",
+                            "size": 2047
+                        },
+                        {
+                            "name": "Ohio",
+                            "ttip": "ttipvaalue",
+                            "colors": "#3182bb",
+                            "size": 1375
+                        },
+                        {
+                            "name": "Gorgia",
+                            "ttip": "ttipvaalue",
+                            "colors": "#3182bb",
+                            "size": 8746
+                        },
+                        {
+                            "name": "Canada",
+                            "ttip": "ttipvaalue",
+                            "colors": "#3182bb",
+                            "size": 2202
+                        },
+                        {
+                            "name": "Losangels",
+                            "ttip": "ttipvaalue",
+                            "colors": "#3182bb",
+                            "size": 1382
+                        },
+                        {
+                            "name": "Mexico",
+                            "ttip": "ttipvaalue",
+                            "colors": "#3182bb",
+                            "size": 1629
+                        },
+                        {
+                            "name": "Texas",
+                            "ttip": "ttipvaalue",
+                            "colors": "#3182bb",
+                            "size": 1675
+                        },
+                        {
+                            "name": "Airzona",
+                            "ttip": "ttipvaalue",
+                            "colors": "#3182bb",
+                            "size": 2042
+                        }
+                    ]
+                },
+                {
+                    "name": "Nevada",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bb",
+                    "size": 1041
+                },
+                {
+                    "name": "Verginia",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bb",
+                    "size": 5176
+                },
+                {
+                    "name": "Michigan",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bb",
+                    "size": 449
+                },
+                {
+                    "name": "Louisiana",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bb",
+                    "size": 5593
+                },
+                {
+                    "name": "Alaska",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bb",
+                    "size": 5534
+                },
+                {
+                    "name": "Arizona",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bb",
+                    "size": 9201
+                },
+                {
+                    "name": "Dallas",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bb",
+                    "size": 19975
+                },
+                {
+                    "name": "Boston",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bb",
+                    "size": 1116
+                },
+                {
+                    "name": "Oklahoma",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bb",
+                    "size": 6006
+                }
+            ]
+        }
+    ]
+}
