@@ -1,0 +1,80 @@
+{
+    "name": "flare",
+    "children": [
+        {
+            "name": "scale",
+            "children": [
+                {
+                    "name": "Finamce",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bd;",
+                    "img": "http://www.pykih.com/favicon.ico",
+                    "size": 2105
+                },
+                {
+                    "name": "Marketing",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bd;",
+                    "img": "http://www.pykih.com/favicon.ico",
+                    "size": 1316
+                },
+                {
+                    "name": "HumanResource",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bd;",
+                    "img": "http://www.pykih.com/favicon.ico",
+                    "size": 3151
+                },
+                {
+                    "name": "Technology",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bd;",
+                    "img": "http://www.pykih.com/favicon.ico",
+                    "size": 3770
+                },
+                {
+                    "name": "Accounting",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bd;",
+                    "img": "http://www.pykih.com/favicon.ico",
+                    "size": 2435
+                },
+                {
+                    "name": "Legal",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bd;",
+                    "img": "http://www.pykih.com/favicon.ico",
+                    "size": 4839
+                },
+                {
+                    "name": "Staff",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bd;",
+                    "img": "http://www.pykih.com/favicon.ico",
+                    "size": 1756
+                },
+                {
+                    "name": "Manufacturing",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bd;",
+                    "img": "http://www.pykih.com/favicon.ico",
+                    "size": 4268
+                },
+                {
+                    "name": "Production",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bd;",
+                    "img": "http://www.pykih.com/favicon.ico",
+                    "size": 1821
+                },
+                {
+                    "name": "Sales",
+                    "ttip": "ttipvaalue",
+                    "colors": "#3182bd;",
+                    "img": "http://www.pykih.com/favicon.ico",
+                    "size": 5833
+                }
+            ]
+        }
+    ]
+}

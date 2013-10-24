@@ -41,7 +41,15 @@
 
 
     </div>
-
+  <script>
+         $(document).ready(function(){
+         Var tree = new PykCharts.treerect({
+         selection: "#test-container",
+         data: "../data/tree.json",
+         });
+         bubble.init();
+         });
+      </script>
 
   </body>
 </html>
